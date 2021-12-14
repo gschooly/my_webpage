@@ -1,88 +1,258 @@
    @font-face {
-    font-family: 'InkLipquid';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
+     font-family: 'InkLipquid';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+   }
 
-    @font-face {font-family: "American Typewriter"; 
-      src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot"); 
-      src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.svg#American Typewriter") format("svg"); }
-   
+   @font-face {
+     font-family: 'EliceDigitalBaeum_Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+   }
+
+   @font-face {
+     font-family: "American Typewriter";
+     src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot");
+     src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.svg#American Typewriter") format("svg");
+   }
+
+   /* 상단바 */
    body {
+     width: 100%;
+     margin: 0;
+   }
+
+   .header {
+     z-index: 10;
+     display: flex;
+     position: fixed;
+     width: 100%;
+     height: 80px;
+     background-color: #FCBF48
+   }
+
+   .logo {
+     position: relative;
+     top: 8px;
+     left: 130px;
+   }
+
+   .menu {
+     width: 700px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+     left: 400px;
+     font-family: "American Typewriter";
+     font-size: 30px;
+     color: white;
+     /* border:1px solid black; */
+   }
+
+   .menu a {
+     text-decoration: none;
+     color: inherit;
+   }
+
+   /* 여기까지 상단바 css */
+
+   /* 홈 화면 */
+   #home_img {
+     z-index: -10;
+     width: 100%;
+     position: relative;
+     /* top:60px; */
+     /* border:1px solid black; */
+   }
+
+   #background {
+     background: black;
+     opacity: 0.5;
+     width: 100%;
+     height: 635px;
+     margin-top: -640px;
+     position: relative;
+   }
+
+   #y {
+     z-index: 1;
+     text-align: center;
+     color: white;
+     font-family: "American Typewriter";
+     font-size: 120px;
+     margin-top: -490px;
+     position: relative;
+     /* border:5px solid red; */
+   }
+
+   /* 여기까지 홈화면 css */
+
+   /* 거캠페이지 */
+
+   #yatg_int {
+     border: 1px solid red;
+     text-align: center;
+     /* font-family: 'EliceDigitalBaeum_Regular'; */
+     height: 695px;
+   }
+
+   #yatg {
+     /* border:1px solid red; */
+     font-size: 40px;
+     padding-top: 180px;
+   }
+
+   #reason {
+     /* border:1px solid red; */
+     margin-top: 150px;
+     font-size: 27px;
+   }
+
+   /* #yatg_img{
       width: 100%;
-      margin: 0;
+      height: 780px;
+      margin-top:-470px;
+      opacity: 0.5;
+      position: relative;
+      z-index: -2;
     }
 
-    .header {
-      z-index: 10;
-      display: flex;
-      position:fixed;
+    #yatg_back{
       width: 100%;
-      height: 80px;
-      background-color: #FCBF48
-    }
-
-    .logo {
-      font-family: 'InkLipquid';
-      color: white;
-      font-size: 55px;
-      align-self: center;
+      height: 617px;
+      margin-top:-675px;
+      background-color: black;
+      opacity: 0.5;
       position: relative;
-      bottom:15px;
-      left: 130px;
-    }
-
-    .logo a{
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .menu {
-      width: 700px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      left: 400px;
-      font-family: "American Typewriter"; 
-      font-size: 30px;
-      color: white;
-      /* border:1px solid black; */
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* .menu_contents {
-      padding: 8px;
-      border-radius: 10px;
-    }
-
-    .menu_contents:hover {
-      background-color: #656565;
+      z-index: -1;
     } */
 
-    img{
-      width:100%;
-      position: relative;
-      top:80px;
-    }
-    #background_gray{
-      background: black;
-      width:100%;
-      height:715px;
-      opacity: 50%;
-      position: relative;
-      bottom:640px;
-    }
-    #y{
-      text-align: center;
-      color: white;
-      font-family: "American Typewriter"; 
-      font-size: 100px;
-      position: relative;
-      bottom:1150px;
-    }
+   .project_box {
+     /* border:1px solid red; */
+     height: 615px;
+   }
+
+   .module {
+     /* border:1px solid red; */
+     font-size: 35px;
+     margin-top: 50px;
+     margin-bottom: 40px;
+     margin-left: 70px;
+   }
+
+   .module_box {
+     /* border:1px solid red; */
+     display: flex;
+     flex-direction: row;
+   }
+
+   .border {
+     border-top: 3px solid black;
+     height: 1px;
+     width: 1035px;
+     margin-top: 71px;
+     margin-left: 20px;
+   }
+
+   .container {
+     width: 335px;
+     height: 200px;
+   }
+
+   .project_name {
+     width: 100%;
+     height: 100%;
+     opacity: 0.9;
+     background: gray;
+     z-index: 3;
+     position: relative;
+     transition: 0.5s;
+     text-align: center;
+     color: white;
+     font-size: 25px;
+     line-height: 200px;
+   }
+
+   .gray_box {
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+     position: relative;
+     top: -200px;
+     background-size: 335px 200px;
+   }
+
+   #m1juje {
+     background-image: url('./1모듈주제중심.jpeg');
+   }
+
+   #m1munje {
+     background-image: url('./1모듈문제정의.jpeg');
+   }
+
+   #m1gaein {
+     background-image: url('./1모듈개인주제.jpeg');
+   }
+
+   #m2juje {
+     background-image: url('./2모듈주제중심.jpeg');
+   }
+
+   #m2munje {
+     background-image: url('./2모듈문제정의.jpeg');
+   }
+
+   #m2gaein {
+     background-image: url('./2모듈개인주제.jpeg');
+   }
+
+   #m3mlab {
+     background-image: url('./3모듈mlab.jpeg');
+   }
+
+   #m3munje {
+     background-image: url('./3모듈문제탐색.jpeg');
+   }
+
+   #m4clab {
+     background-color: yellow;
+   }
+
+   #m4munje {
+     background-color: yellow;
+   }
+
+   .project_int {
+     width: 100%;
+     height: 100%;
+     background: gray;
+     z-index: 1;
+     position: relative;
+     text-align: center;
+     top: -400px;
+     transition: 0.5s;
+   }
+
+   .container:hover .project_name {
+     opacity: 0;
+     transition: 1s;
+     font-size: 0px;
+   }
+
+   .container:hover .project_int {
+     margin-top: 200px;
+     transition: 1s;
+     text-align: center;
+     color: white;
+     font-size: 15px;
+     line-height: 200px;
+   }
+
+   .project {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+   }
