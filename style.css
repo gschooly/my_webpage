@@ -39,6 +39,37 @@
      left: 170px;
    }
 
+   #logo_1 {
+     position: relative;
+     z-index: 1;
+     background: url('./와이로고3.png')center center /100% no-repeat;
+     top: 180px;
+     left: 480px;
+     width: 300px;
+     height: 300px;
+     opacity: 0;
+     animation: ylogo 2.5s ease-out 1 normal;
+     animation-delay: 0.5s;
+     animation-fill-mode: forwards;
+   }
+
+   @keyframes ylogo {
+
+     60% {
+       width: 300px;
+       height: 300px;
+       transform: translate(0px, 0px);
+       opacity: 1;
+     }
+
+     100% {
+       width: 55px;
+       height: 55px;
+       transform: translate(-310px, -177px);
+       opacity: 1;
+     }
+   }
+
    .menu {
      width: 550px;
      display: flex;
@@ -49,6 +80,22 @@
      font-family: "American Typewriter";
      font-size: 25px;
      color: white;
+   }
+
+   #menu_1 {
+     width: 550px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+     left: 550px;
+     font-family: "American Typewriter";
+     font-size: 25px;
+     color: white;
+     animation: opaci 1s linear 1 normal;
+     animation-delay: 3.1s;
+     animation-fill-mode: forwards;
+     opacity: 0;
      /* border:1px solid black; */
    }
 
@@ -85,7 +132,20 @@
      font-size: 120px;
      margin-top: -490px;
      position: relative;
-     /* border:5px solid red; */
+     opacity: 0;
+     animation: opaci 1s linear 1 normal;
+     animation-delay: 3.1s;
+     animation-fill-mode: forwards;
+   }
+
+   @keyframes opaci {
+     0% {
+       opacity: 0;
+     }
+
+     100% {
+       opacity: 1;
+     }
    }
 
    /* 여기까지 홈화면 css */
@@ -96,10 +156,9 @@
      border: 1px solid red;
      height: 700px;
      overflow: hidden;
-     color: white;
    }
 
-   #gimg {
+   /* #gimg {
      z-index: -10;
      width: 100%;
      position: relative;
@@ -114,7 +173,7 @@
      margin-top: -910px;
      position: relative;
      z-index: 1;
-   }
+   } */
 
    #yatg {
      /* border: 1px solid red; */
