@@ -46,10 +46,13 @@
 
 <br>
 
+ ## 📱 메뉴 버튼 마우스호버
+
+<br>
 
 | 이미지 | |
 |:-----:|:----|
-| <video src="https://user-images.githubusercontent.com/94329539/146098364-7f90c031-c9e4-458b-bd7a-4d5ffc33d159.mov" width= 400> | <h2>Splash </h2> <br> 스플래시 화면을 `lottie-ios` 를 통해 적용하였습니다. <br>한 Loop 가 재생되고 로그인 화면으로 넘어갑니다. <br> splash 에서는 토큰의 세션이 만료되었는지에 대해 서버통신을 통해 확인합니다. <br> 만료가 되었거나 토큰이 없다면 로그인 화면으로, 유효한 토큰을 소유한 유저라면 바로 홈화면으로 넘어갑니다.  |
+| <video src="https://user-images.githubusercontent.com/94329539/146098880-dcb5a236-5b89-4bdc-8c12-0e98bb38acc2.mov" width= 400> | <h2>Splash </h2> <br> 스플래시 화면을 `lottie-ios` 를 통해 적용하였습니다. <br>한 Loop 가 재생되고 로그인 화면으로 넘어갑니다. <br> splash 에서는 토큰의 세션이 만료되었는지에 대해 서버통신을 통해 확인합니다. <br> 만료가 되었거나 토큰이 없다면 로그인 화면으로, 유효한 토큰을 소유한 유저라면 바로 홈화면으로 넘어갑니다.  |
 
 <div align="center">
  
