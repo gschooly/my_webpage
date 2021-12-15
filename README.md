@@ -54,6 +54,10 @@
 <div align="center">
  
 <br>
+
+ ## 📱 scroll
+
+<br>
  
  | 이미지 | |
 |:-----:|:----|
@@ -65,17 +69,6 @@
 <br>
 
 <br>
-
-## 🎉 새롭게 도전해본 기능
-
-<br>  
-
-
-## 1.스크롤 애니메이션 구현하기
-
-- meaning에서는 타임 스탬프 기능을 위해 카메라 위에 현재 시간과 미닝의 로고를 올려 함께 촬영합니다.
-- 핸드폰에서 보통 사용하는 기본 카메라 UIImagePickerController가 아닌 AVFoundation를 사용해 새로운 카메라 화면을 구현해주었습니다.
-
 ```js
   window.addEventListener
 ```
