@@ -23,7 +23,7 @@
 
 ### 📱 컴포넌트
 
-- 홈 화면 에니메이션 효과
+- 홈 화면 애니메이션 효과
 - 메뉴 버튼 마우스오버 효과
 
 <br>
@@ -31,13 +31,13 @@
 
  <h1 align="center"> 컴포넌트 소개 </h1>
  
-## 📱 홈 화면 에니메이션
+## 📱 홈 화면 애니메이션
 
 <br>
 
 | 이미지 | |
 |:-----:|:----|
-| <video src="https://user-images.githubusercontent.com/94329539/146098364-7f90c031-c9e4-458b-bd7a-4d5ffc33d159.mov" width= 400> | <h2>에니메이션 효과 </h2> <br> 웹페이지를 켰을 때 바로 나오는 홈 화면에 animation, Keyframe효과를 사용해 에니메이션 효과를 만들었습니다. <br> 화면의 가운데에 로고가 서서히 나타났다가 작아지며 원래 로고가 있어야 할 위치로 이동합니다.  |
+| <video src="https://user-images.githubusercontent.com/94329539/146098364-7f90c031-c9e4-458b-bd7a-4d5ffc33d159.mov" width= 400> | <h2>애니메이션 효과 </h2> <br> 웹페이지를 켰을 때 바로 나오는 홈 화면에 animation, Keyframe효과를 사용해 에니메이션 효과를 만들었습니다. <br> 화면의 가운데에 로고가 서서히 나타났다가 작아지며 원래 로고가 있어야 할 위치로 이동합니다.  |
 
 <div align="center">
 
