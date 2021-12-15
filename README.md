@@ -57,7 +57,7 @@
  
  | 이미지 | |
 |:-----:|:----|
-| <img src="https://user-images.githubusercontent.com/94329539/146101013-188dbd64-7a54-42b4-b4df-efc4db2b3080.png" width= 400> | <h2>scroll</h2> <br>  |
+| <img src="https://user-images.githubusercontent.com/94329539/146101013-188dbd64-7a54-42b4-b4df-efc4db2b3080.png" width= 400> | <h2>scroll</h2> <br> 화면의 하단에 스크롤을 안내하는? UI를 만들어 화면을 올리면 안보이게 하는 등의 효과를 넣을 예정입니다. |
  
 <div align="center">
  
