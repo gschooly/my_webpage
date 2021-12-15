@@ -40,7 +40,7 @@
 
 | 이미지 | |
 |:-----:|:----|
-| <video src="https://user-images.githubusercontent.com/94329539/146098364-7f90c031-c9e4-458b-bd7a-4d5ffc33d159.mov" width= 500> | <h2>Splash </h2> <br> 스플래시 화면을 `lottie-ios` 를 통해 적용하였습니다. <br>한 Loop 가 재생되고 로그인 화면으로 넘어갑니다. <br> splash 에서는 토큰의 세션이 만료되었는지에 대해 서버통신을 통해 확인합니다. <br> 만료가 되었거나 토큰이 없다면 로그인 화면으로, 유효한 토큰을 소유한 유저라면 바로 홈화면으로 넘어갑니다.  |
+| <video src="https://user-images.githubusercontent.com/94329539/146098364-7f90c031-c9e4-458b-bd7a-4d5ffc33d159.mov" width= 400> | <h2>Splash </h2> <br> 스플래시 화면을 `lottie-ios` 를 통해 적용하였습니다. <br>한 Loop 가 재생되고 로그인 화면으로 넘어갑니다. <br> splash 에서는 토큰의 세션이 만료되었는지에 대해 서버통신을 통해 확인합니다. <br> 만료가 되었거나 토큰이 없다면 로그인 화면으로, 유효한 토큰을 소유한 유저라면 바로 홈화면으로 넘어갑니다.  |
 |<img src="https://media.giphy.com/media/QHi2ABdgVFYzxLLmjZ/giphy.gif" width= 300> | <h2>Login </h2> <br> 더 나은 레이아웃을 위해 로그인 버튼을 누르면 애니메이션과 함께 아이디, 비밀번호 란이 보여집니다. <br> 아이디 혹은 비밀번호를 적지 않았거나 옳지 않은 값이 들어간다면 빨간 경고 글씨가 띄워집니다. |
 
 <div align="center">
@@ -70,7 +70,3 @@
 ```js
   window.addEventListener
 ```
-
-
-https://user-images.githubusercontent.com/94329539/146098364-7f90c031-c9e4-458b-bd7a-4d5ffc33d159.mov
-
