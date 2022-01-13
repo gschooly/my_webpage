@@ -5,26 +5,146 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>와이 개인웹페이지</title>
+  <title>2021_4M 개인 웹페이지</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body style="overflow-x: hidden">
   <div class='header'>
     <div class='logo' id='logo_1'><a href="./pw_home.html"></a></div>
     <div class='menu' id='menu_1'>
-      <div class='menu_contents'><a href="./pw_home.html">Who is y</a></div>
-      <div class='menu_contents'><a href="./y_baseball.html">y and baseball</a></div>
-      <div class='menu_contents'><a href="./y_gschool.html">y at gschool</a></div>
+      <div class='menu_content'>
+        <div class='menu_contents'><a href="./pw_home.html">Who is y</a></div>
+        <div class='icon'><a href="./pw_home.html"><i class="fab fa-y-combinator"></i></a></div>
+      </div>
+      <div class='menu_content'>
+        <div class='menu_contents'><a href="./y_baseball.html">y and baseball</a></div>
+        <div class='icon'><a href="./pw_home.html"><i class="fas fa-baseball-ball"></i></a></div>
+      </div>
+      <div class='menu_content'>
+        <div class='menu_contents'><a href="./y_gschool.html">y at gschool</a></div>
+        <div class='icon'><a href="./pw_home.html"><i class="fas fa-school"></i></a></div>
+      </div>
     </div>
   </div>
-  <div id='home'>
-    <img id='home_img' src="와이.jpeg" />
-    <div id='background'></div>
-    <div id='y'>y</div>
+
+  <div class='scroll'>
+
+    <div class='introduce' id='introduce2'>
+      <div id='home'>
+        <img id='home_img' src="와이.jpeg" />
+        <div id='background'></div>
+        <div id='y'>y</div>
+      </div>
+    </div>
+
+    <div class='introduce' id='introduce1'>
+      <div class='intbox' id='intbox1'>
+        <button class='button'><span id='name'>
+            <div class='int'>
+              <div class='ico'><i class="far fa-id-card"></i></div>
+              <div class='icon_name'>이름</div>
+            </div>
+          </span></button>
+
+        <button class='button'><span id='age'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-history"></i></div>
+              <div class='icon_name'>나이</div>
+            </div>
+          </span></button>
+
+        <button class='button'><span id='live'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-home"></i></div>
+              <div class='icon_name'>사는곳</div>
+            </div>
+          </span></button>
+      </div>
+
+      <div class='intbox' id='intbox2'>
+        <button class='button' style='width:530px'><span id='school'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-school"></i></div>
+              <div class='icon_name'>학교</div>
+            </div>
+          </span></button>
+
+        <button class='button'><span id='hobby'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-baseball-ball"></i></div>
+              <div class='icon_name'>취미</div>
+            </div>
+          </span></button>
+      </div>
+    </div>
+
+    <div class='introduce' id='remove_scroll3'>
+
+      <div class='intbox' id='intbox3'>
+        <button class='button'><span id='food'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-utensils"></i></div>
+              <div class='icon_name'>좋아하는 음식</div>
+            </div>
+          </span></button>
+
+        <button class='button'><span id='movie'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-film"></i></div>
+              <div class='icon_name'>좋아하는 영화</div>
+            </div>
+          </span></button>
+
+        <button class='button' style='width:380px'><span id='book'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-book-open"></i></div>
+              <div class='icon_name'>좋아하는 책</div>
+            </div>
+          </span></button>
+      </div>
+
+      <div class='intbox' id='intbox4'>
+        <button class='button' style='width:750px'><span id='motto'>
+            <div class='int'>
+              <div class='ico'><i class="fas fa-comment"></i></div>
+              <div class='icon_name'>좌우명</div>
+            </div>
+          </span></button>
+      </div>
+
+    </div>
+
+
   </div>
+
+  <div id="arrow"></div>
+  <div id='scrol'>scroll</div>
+
+  <script>
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1000
+    });
+
+    var scrollRemove = document.getElementById('remove_scroll3');
+    var arrow = document.getElementById('arrow');
+    var scroll = document.getElementById('scrol');
+
+    scrollRemove.addEventListener('mouseenter', function () {
+      arrow.style.opacity = '0'
+      scrol.style.opacity = '0'
+    });
+    scrollRemove.addEventListener('mouseleave', function () {
+      arrow.style.opacity = '0.3'
+      scrol.style.opacity = '0.4'
+    });
+  </script>
+
 </body>
 
 </html>

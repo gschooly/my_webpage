@@ -18,10 +18,19 @@
      src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.svg#American Typewriter") format("svg");
    }
 
+   @font-face {
+     font-family: 'GowunBatang-Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+   }
+
    /* 상단바 */
    body {
      width: 100%;
      margin: 0;
+     overflow-x: hidden;
+     overflow-y: auto;
    }
 
    .header {
@@ -30,7 +39,7 @@
      position: fixed;
      width: 100%;
      height: 60px;
-     background-color: #FCBF48
+     background-color: #FCBF48;
    }
 
    .logo {
@@ -83,20 +92,10 @@
    }
 
    #menu_1 {
-     width: 550px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     position: relative;
-     left: 550px;
-     font-family: "American Typewriter";
-     font-size: 25px;
-     color: white;
      animation: opaci 1s linear 1 normal;
      animation-delay: 3.1s;
      animation-fill-mode: forwards;
      opacity: 0;
-     /* border:1px solid black; */
    }
 
    .menu a {
@@ -104,23 +103,60 @@
      color: inherit;
    }
 
+   .menu_content {
+     position: relative;
+     height: 40px;
+   }
+
+   .menu_contents {
+     padding: 5px;
+     position: relative;
+     z-index: 2;
+   }
+
+   .icon {
+     text-align: center;
+     position: relative;
+     font-size: 40px;
+     bottom: 40px;
+     z-index: 1;
+     opacity: 0;
+   }
+
+   .menu_content:hover .menu_contents {
+     opacity: 0;
+     transition: 0.5s;
+   }
+
+   .menu_content:hover .icon {
+     opacity: 1;
+     transition: 0.5s;
+   }
+
    /* 여기까지 상단바 css */
+
+
+
+
+
+
+
+
 
    /* 홈 화면 */
    #home_img {
      z-index: -10;
      width: 100%;
      position: relative;
-     /* top:60px; */
-     /* border:1px solid black; */
+     bottom: 17px;
    }
 
    #background {
      background: black;
      opacity: 0.5;
      width: 100%;
-     height: 655px;
-     margin-top: -660px;
+     height: 778px;
+     margin-top: -800px;
      position: relative;
    }
 
@@ -130,7 +166,7 @@
      color: white;
      font-family: "American Typewriter";
      font-size: 120px;
-     margin-top: -490px;
+     margin-top: -450px;
      position: relative;
      opacity: 0;
      animation: opaci 1s linear 1 normal;
@@ -148,76 +184,264 @@
      }
    }
 
+   .scroll {
+     width: 100%;
+     height: 100vh;
+     overflow: auto;
+     scroll-snap-type: y mandatory;
+   }
+
+   .introduce {
+     border: 1px solid white;
+     width: 100%;
+     height: 100vh;
+     scroll-snap-align: center;
+     font-family: 'GowunBatang-Regular';
+   }
+
+   #introduce1 {
+     margin-top: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+   }
+
+   #introduce2 {
+     margin-top: 50px;
+     border: 1px solid black;
+   }
+
+   #remove_scroll3 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+   }
+
+  .button {
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    background: none;
+    font-family: 'GowunBatang-Regular';
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    margin-top: 50px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+    color: black;
+    font-size: 25px;
+  }
+
+  .button #name:after {
+    content: '윤상엽';
+    right: -20px;
+  }
+
+  .button #age:after {
+    content: '18';
+    right: -10px;
+  }
+
+  .button #live:after {
+    content: '대전';
+    right: -20px;
+  }
+
+  .button #school:after {
+    content: '노은초-노은중-거꾸로캠퍼스';
+    right: -20px;
+  }
+
+  .button #hobby:after {
+    content: '야구';
+    right: -20px;
+  }
+
+  .button #food:after {
+    content: '김치찌개';
+    right: -20px;
+  }
+
+  .button #movie:after {
+    content: '세얼간이';
+    right: -20px;
+  }
+
+  .button #book:after {
+    content: '아름다운 아이';
+    right: -20px;
+  }
+
+  .button #motto:after {
+    content: '"밟혀도 다시 자라는 잡초같은 인생을 살아라"';
+    right: -20px;
+  }
+
+
+  .button:hover span {
+    color: #F77F00;
+  }
+
+  .button:hover #name {
+    padding-right: 70px;
+  }
+
+  .button:hover #age {
+    padding-right: 70px;
+  }
+
+  .button:hover #live {
+    padding-right: 70px;
+  }
+
+  .button:hover #school {
+    padding-right: 290px;
+  }
+
+  .button:hover #hobby {
+    padding-right: 70px;
+  }
+
+  .button:hover #food {
+    padding-right: 90px;
+  }
+
+  .button:hover #movie {
+    padding-right: 90px;
+  }
+
+  .button:hover #book {
+    padding-right: 140px;
+  }
+
+  .button:hover #motto {
+    padding-right: 460px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button:hover {
+    background: rgba(246, 240, 194, 0.7);
+  }
+
+  .ico {
+    font-size: 90px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .icon_name {
+    font-size: 15px;
+  }
+   
+
+
+
+
+
+
+
    /* 여기까지 홈화면 css */
 
    /* 거캠페이지 */
 
-   #yatg_int {
-     border: 1px solid red;
-     height: 700px;
-     overflow: hidden;
-   }
-
-   /* #gimg {
-     z-index: -10;
+   .y_gschool {
      width: 100%;
-     position: relative;
-     opacity: 0.4;
+     height: 100vh;
+     overflow: auto;
+     scroll-snap-type: y mandatory;
+     font-family: 'GowunBatang-Regular';
+     background: linear-gradient(to bottom, rgba(246, 240, 194, 0.4), rgba(246, 243, 213, 0.4), rgba(250, 250, 250, 0.4), white);
    }
 
-   #background_g {
-     background: black;
-     opacity: 0.4;
-     width: 100%;
-     height: 655px;
-     margin-top: -910px;
-     position: relative;
-     z-index: 1;
-   } */
-
-   #yatg {
-     /* border: 1px solid red; */
-     font-size: 40px;
-     padding-top: 180px;
-     position: relative;
-     z-index: 2;
-     text-align: center;
-     margin-top: -700px;
-   }
-
-   #reason {
-     /* border:1px solid red; */
-     margin-top: 150px;
-     font-size: 27px;
-     position: relative;
-     z-index: 2;
-     text-align: center;
+   /* #F6F0C2 #F6F3D5 #FAFAFA */
+   #project_box1 {
+     background-image: url('./거캠.png');
+     background-size: 100% 100%;
+     opacity: 0.7;
+     border: 1px solid black;
    }
 
    .project_box {
-     border: 1px solid red;
-     height: 615px;
+     border: 1px solid white;
+     width: 100%;
+     height: 100vh;
+     scroll-snap-align: center;
+   }
+
+   .project_text {
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     color: white
+   }
+
+   .ygschool {
+     font-size: 40px;
+     text-align: center;
+     padding-top: 150px;
+   }
+
+   .reason {
+     margin-top: 80px;
+     font-size: 25px;
+     line-height: 40px;
+     text-align: center;
    }
 
    .module {
-     /* border:1px solid red; */
      font-size: 35px;
      margin-top: 50px;
      margin-bottom: 40px;
      margin-left: 70px;
    }
 
+   .borderandteam{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .team{
+     margin-left: 20px;
+   }
+
    .module_box {
-     /* border:1px solid red; */
      display: flex;
      flex-direction: row;
+     margin-top: 60px;
    }
 
    .border {
      border-top: 3px solid black;
      height: 1px;
      width: 1035px;
-     margin-top: 71px;
+     margin-top: 68px;
      margin-left: 20px;
    }
 
@@ -282,11 +506,11 @@
    }
 
    #m4clab {
-     background-color: yellow;
+     background-image: url('./씨랩.png');
    }
 
    #m4munje {
-     background-color: yellow;
+     background-image: url('./4모듈문제.001.jpeg')
    }
 
    .project_int {
@@ -298,6 +522,10 @@
      text-align: center;
      top: -400px;
      transition: 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 27px;
    }
 
    .container:hover .project_name {
@@ -312,11 +540,269 @@
      text-align: center;
      color: white;
      font-size: 15px;
-     line-height: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 27px;
    }
 
    .project {
      display: flex;
      flex-direction: row;
      justify-content: space-evenly;
+   }
+
+
+   /* 와이 야구 페이지 */
+
+   .y_and_baseball {
+     width: 100%;
+     height: 100vh;
+     overflow: auto;
+     scroll-snap-type: y mandatory;
+     font-family: 'GowunBatang-Regular';
+     overflow-x: hidden;
+   }
+
+   #baseball {
+     display: flex;
+     justify-content: center;
+   }
+
+   .baseball_container {
+     display: flex;
+     flex-direction: row;
+     height: 100vh;
+     width: 100%;
+     scroll-snap-align: center;
+     background: #F4F5F2;
+     position: relative;
+     z-index: 5;
+   }
+
+   .ybaseball {
+     font-size: 50px;
+     text-align: center;
+     padding-top: 170px;
+     line-height: 150px;
+     background: rgba(0, 0, 0, 0.5);
+     color: white;
+     height: 100vh;
+     width: 100%;
+   }
+
+   .baseball_img {
+     margin-top: 60px;
+     flex: 1;
+   }
+
+   .b_text {
+     margin-top: 60px;
+     flex: 1.5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #F4F5F2;
+     position: relative;
+     z-index: 1;
+     /* border: 1px solid black; */
+   }
+
+   .baseball_text {
+     /* border: 1px solid black; */
+     height: 50%;
+     width: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .amolang {
+     text-align: center;
+     line-height: 35px;
+     /* border: 1px solid black; */
+     width: 100%;
+   }
+
+   #baseball {
+     background-image: url('./야구5.jpeg');
+     background-size: 100% 100vh;
+     opacity: 0.7;
+   }
+
+   .baseballpic {
+     border: 4px solid black;
+   }
+
+   #baseball1 {
+     background-image: url('./야구4.jpeg');
+     background-size: 100% 100vh;
+   }
+
+   #baseballpic6 {
+     border-radius: 20px;
+     width: 52%;
+     position: relative;
+     top: 335px;
+     z-index: 1;
+     transform: rotate(359deg);
+   }
+
+
+   #baseballpic7 {
+     border-radius: 20px;
+     width: 50%;
+     position: relative;
+     top: 350px;
+     left: 260px;
+     transform: rotate(1deg);
+   }
+
+   #baseball2 {
+     background-image: url('./리틀야구2.jpeg');
+     background-size: 100% 100vh;
+   }
+
+   #baseballpic3 {
+     border-radius: 20px;
+     height: 50%;
+     position: relative;
+     top: 320px;
+     left: 305px;
+     transform: rotate(1deg);
+   }
+
+   #baseball3 {
+     background-image: url('./티볼1.jpeg');
+     background-size: 100% 100%;
+   }
+
+   #baseballpic4 {
+     border-radius: 20px;
+     width: 60%;
+     position: relative;
+     top: 400px;
+     transform: rotate(358deg);
+   }
+
+   #baseballpic5 {
+     border-radius: 20px;
+     width: 32%;
+     position: relative;
+     top: 400px;
+     left: 30px;
+     transform: rotate(2deg);
+   }
+
+   #baseball4 {
+     background-image: url('./야구장.jpeg');
+     background-size: 100% 100%;
+   }
+
+   #baseballpic1 {
+     border-radius: 20px;
+     width: 38%;
+     position: relative;
+     top: 340px;
+     transform: rotate(358deg);
+   }
+
+   #baseballpic2 {
+     border-radius: 20px;
+     width: 65%;
+     position: relative;
+     left: 200px;
+     bottom: 345px;
+     transform: rotate(2deg);
+   }
+
+   #baseball5 {
+     background-image: url('./한화2.jpeg');
+     background-size: 100% 100%;
+   }
+
+   /* #baseball5 {
+     background-image: url('./야구2.jpeg');
+     background-size: 100% 100vh;
+   } */
+
+   /* 화살표 */
+
+   #arrow,
+   #arrow:before {
+     position: fixed;
+     left: 50%;
+     right: 50%;
+     z-index: 6;
+   }
+
+   #arrow {
+     width: 20px;
+     height: 20px;
+     top: 94%;
+     margin: -20px 0 0 -20px;
+     transform: rotate(45deg);
+     border-left: none;
+     border-top: none;
+     border-right: 2px black solid;
+     border-bottom: 2px black solid;
+     opacity: 0.3;
+     transition: 0.3s;
+   }
+
+   #arrow:before {
+     content: '';
+     width: 10px;
+     height: 10px;
+     top: 94%;
+     margin: -14px 0 0 -5px;
+     border-left: none;
+     border-top: none;
+     border-right: 1px black solid;
+     border-bottom: 1px black solid;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-name: arrow;
+     animation-direction: alternate;
+     opacity: 0.4;
+     transition: 0.3s;
+     z-index: 6;
+   }
+
+   @keyframes arrow {
+     0% {
+       opacity: 0.4;
+     }
+
+     100% {
+       opacity: 0.1;
+       transform: translate(-7px, -7px);
+     }
+   }
+
+   #scrol {
+     position: fixed;
+     bottom: 10px;
+     left: 48%;
+     opacity: 0.4;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-name: scrol;
+     animation-direction: alternate;
+     transition: 0.3s;
+     z-index: 6;
+   }
+
+   @keyframes scrol {
+     0% {
+       transform: translate(0, 0);
+     }
+
+     100% {
+       transform: translate(0, -3px);
+     }
+   }
+
+   #remove_scroll:hover .scrol {
+     opacity: 0;
    }
